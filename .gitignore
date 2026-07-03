@@ -4,7 +4,7 @@ __pycache__/
 .pytest_cache/
 output/
 .manifest_cache/
-manifest_*
+manifest_[0-9a-f]*
 pkg_version/
 hoyo-files/
 .uploads/

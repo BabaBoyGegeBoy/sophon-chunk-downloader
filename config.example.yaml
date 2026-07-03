@@ -1,0 +1,35 @@
+# Sophon Chunk Downloader 配置文件示例
+# 使用方法：复制为 config.yaml 并按需修改，然后运行 python main.py --config config.yaml
+
+# 游戏 ID：hk4e=原神, hkrpg=星穹铁道, nap=绝区零, bh3=崩坏3
+game: hk4e
+
+# 游戏版本号
+version: 6.1.0
+
+# 下载类别 ID 列表
+#   10017 = 游戏本体
+#   10018 = 中文语音
+#   留空或注释则交互选择 / 自动检测全部
+categories: [10017, 10018]
+
+# 输出目录（下载的游戏文件存放位置）
+output: ./output
+
+# pkg_version 数据目录（orilights/pkg_version 仓库的克隆位置）
+data_dir: ./pkg_version
+
+# 最大并发下载数
+concurrency: 32
+
+# 单个 chunk 失败重试次数
+retries: 3
+
+# 请求超时秒数
+timeout: 60
+
+# 是否启用 chunk 级 MD5 校验
+verify_chunks: true
+
+# 是否启用文件级 MD5 校验
+verify_files: true

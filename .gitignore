@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+output/
+.manifest_cache/
+manifest_*
+pkg_version/
+hoyo-files/
+.uploads/
+config.yaml
+*.log
+.env
+.DS_Store
+Thumbs.db
